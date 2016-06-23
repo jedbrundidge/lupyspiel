@@ -1,0 +1,30 @@
+<h1 class="header">Teams Registerd</h1><br><br>
+
+<div ng-controller="teamsController" id="teamsTable">
+    <table class="table table-responsive">
+
+        <thead class="tableHeader">
+        <tr>
+            <th>Team Name</th>
+            <th>Club</th>
+            <th>Skip</th>
+            <th>Third</th>
+            <th>Second</th>
+            <th>Lead</th>
+        </tr>
+        </thead>
+
+        <tbody class="tableBody">
+        <tr ng-repeat="team in teams">
+            <td>{{team.teamName}}</td>
+            <td>{{team.club}}</td>
+            <td>{{team.skip}}</td>
+            <td>{{team.third}}</td>
+            <td>{{team.second}}</td>
+            <td>{{team.lead}}</td>
+        </tr>
+        </tbody>
+
+    </table>
+</div>
+
